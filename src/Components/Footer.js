@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className="footer">
         <div className="footer-left">
-          <p>Made with ❤️</p>
+          <p>Made with 🤍</p>
         </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
+        <p>&copy; 2024 Pratyush Ghatole. All rights reserved.</p>
       </div>
       <Link to="About" smooth={true} duration={500}>
             <div className='upButton'>
