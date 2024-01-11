@@ -8,7 +8,7 @@ import { Element } from 'react-scroll';
 import Loading from './Components/Loading';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-import Vid from './Assets/Background/vid4.mp4';
+import ig from './Assets/images/bg05.jpg'
 
 
 function App() {
@@ -30,24 +30,22 @@ function App() {
       ) : (
         <Element name="About">
           <>
-          <Navbar />
-          <Hero />
-          <Element name="Skills">
-            <Skills />
-          </Element>
-          <Element name="Projects">
-            <Projects/>
-          </Element>
-          <Element name="Contact">
-            <Contact/>
-          </Element>
-          <Footer />
-          <div className='overlay'>
-            <video autoPlay muted loop id="background-video">
-              <source src={Vid} type="video/mp4" />
-            </video>
-          </div>
-        </>
+            <Navbar />
+            <Hero />
+            <Element name="Skills">
+              <Skills />
+            </Element>
+            <Element name="Projects">
+              <Projects />
+            </Element>
+            <Element name="Contact">
+              <Contact />
+            </Element>
+            <Footer />
+            <div className='backimg-container'>
+              <img className='backimg' alt="backImg" src={ig} />
+            </div>
+          </>
         </Element>
       )}
     </div>
