@@ -1,38 +1,363 @@
-.App {
-  text-align: center;
+/* Fonts */
+@font-face {
+  font-family: 'font1';
+  src: url('./Assets/fonts/acorn.woff') format('woff');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'font2';
+  src: url('./Assets/fonts/gt.woff') format('woff');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* General Styles */
+body { 
+  background-color: #08090e;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'font2';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Loading Container */
+.loading-container {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  background-color: black;
+}
+
+/* Background Video */
+#background-video {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 1.1rem;
+  z-index: 1000;
+  margin: 1.1rem auto;
+  width: 50vw;
+  height: 3rem;
+  background-color: #000000ac;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  border-radius: 50px;
+}
+
+.navbar a {
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 0.4rem 0.7rem;
+  color: white;
+  transition: all ease-in-out 0.2s;
+  text-decoration: none;
+}
+
+.navbar a:active {
+  color: #14FFEC;
+  transform: translateY(-5px);
+}
+
+/* Hero Section */
+.mainSection {
+  height: 90vh;
+  border-bottom: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.welcome {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto 0 auto;
+  height: 100%;
+}
+
+.name {
+  margin: 0 1.5rem;
+  font-family: 'font1';
+  color: #14FFEC;
+  mix-blend-mode: difference;
+  font-size: 6rem;
+}
+
+.wave {
+  margin: 0 1.5rem;
+  width: 4rem;
+}
+
+.heroSection h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #14FFEC;
+}
+
+.typedAni {
+  font-size: 2rem;
+  margin: 1rem 1.6rem;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+}
+
+.aboutInfo {
+  text-align: center;
+  width: 60vw;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Skills Section */
+.skillSection {
+  background-color: #0000009d;
+  border-bottom: 2px solid white;
+  user-select: none;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.skillSection h1 {
+  font-family: 'font1';
+  font-size: 3.5rem;
+  margin: 0;
+  color: #14FFEC;
+}
+
+.partition {
+  margin: 0;
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.codingSkill,
+.devSkills {
+  margin: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.devsk {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.232);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.devsk svg {
+  margin-right: 5px;
+}
+
+.partition h2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.7rem;
+  margin: 1rem 1.5rem;
+}
+
+.profileLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileLinks h2 {
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+}
+
+.linkss {
+  width: 55vw;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 10px;
+}
+
+.linkCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: medium;
+}
+
+.linkHover {
+  padding: 5px 0;
+}
+
+.linkHover:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.imageLogo {
+  width: 50px;
+}
+
+.imageLogoC {
+  width: 70px;
+  padding: 12px 0;
+}
+
+/* Contact Section */
+.social-links {
+  line-height: 4;
+  position: fixed;
+  left: 0;
+  top: 30vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 20px 20px 0;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 15px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #14FFEC;
+}
+
+.social-links svg {
+  cursor: pointer;
+}
+
+/* Footer Section */
+.footer {
+  bottom: 0;
+  position: relative;
+  background-color: #333;
+  color: #14FFEC;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  color: #808080;
+  margin: 0;
+  font-size: 14px;
+}
+
+.conButton {
+  display: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    width: 98vw;
+    font-size: small;
   }
-  to {
-    transform: rotate(360deg);
+  .name {
+    font-size: 4rem;
+  }
+
+  .wave {
+    width: 3rem;
+  }
+
+  .heroSection h1 {
+    font-size: 3rem;
+  }
+
+  .typedAni {
+    font-size: 1.5rem;
+  }
+
+  .aboutInfo {
+    width: 80vw;
+    text-align: left;
+  }
+  .partition {
+    width: 100vw;
+  }
+
+  .devSkills,
+  .codingSkillsSection {
+    justify-content: center;
+    margin: 1rem;
+  }
+  .devsk {
+    font-size: small;
+    padding: 6px;
+    margin: 5px;
+  }
+  .imageLogo {
+    width: 30px;
+  }
+  .imageLogoC {
+    width: 50px;
+    padding: 7px 0;
+  }
+  .linkss {
+    width: 70vw;
+  }
+  .social-links {
+    line-height: 0;
+    padding: 30px;
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: #14FFEC;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px 20px 0 0;
+    justify-content: center;
+  }
+  .social-links a {
+    color: #000000;
+  }
+  .social-links a:hover {
+    color: #ffffff;
+  }
+  .conButton {
+    display: block;
   }
 }

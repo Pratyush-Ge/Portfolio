@@ -1,0 +1,136 @@
+.projectCont {
+  background-color: #0000009d;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectCont h1 {
+  margin-bottom: 0;
+  font-family: "font1";
+  font-size: 3.5rem;
+  color: #14FFEC;
+}
+
+.cardSection {
+  justify-content: center;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 400px;
+  height: max-content;
+  padding: 20px;
+  color: white;
+  mix-blend-mode: normal;
+  background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 40%, white, #14FFEC) border-box;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.card.expanded .aboutProject {
+  max-height: none;
+}
+
+.card .main-content {
+  flex: 1;
+}
+
+.card .heading {
+  font-size: 24px;
+  margin: 0 auto 1rem;
+  font-weight: 600;
+}
+
+.categories, .categoriesimg {
+  margin: 0 auto 1rem auto;
+  flex-direction: column; 
+  object-fit: cover;
+  width: 100%;
+  display: flex;
+  border-radius: 8px;
+}
+
+.categoriesimg{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  cursor: pointer; 
+}
+
+.aboutProject {
+  text-align: left;
+  overflow: hidden;
+  max-height: 100px;
+  transition: max-height 0.5s ease;
+  position: relative;
+}
+
+.aboutProject.expanded {
+  max-height: none;
+}
+
+.aboutProject p {
+  margin: 0;
+}
+
+.aboutProject::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px; 
+  background: linear-gradient(rgba(33, 33, 33, 0), #212121);
+}
+
+.aboutProject.expanded::before {
+  background: linear-gradient(rgba(33, 33, 33, 0), rgba(33, 33, 33, 0));
+}
+
+
+.categories span {
+  background-color: #e81cff;
+  padding: 4px 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 50em;
+}
+
+.card .cardfooter {
+  cursor: pointer;
+  font-weight: 600;
+  color: #474747;
+  margin-right: 4px;
+}
+
+.cardfooter a {
+  text-decoration: none;
+  color: #717171;
+}
+
+.card button {
+  width: 8rem;
+  margin: 0 auto;
+  margin-top: 8px;
+  background-color: #14FFEC;
+  color: #000000;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #ffffff;
+}

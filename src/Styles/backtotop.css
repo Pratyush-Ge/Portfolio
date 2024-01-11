@@ -1,0 +1,35 @@
+.Btn {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(white, #14FFEC);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 2.5rem;
+    bottom: 3rem;
+    border: none;
+  }
+  
+  .arrow path {
+    fill: rgb(0, 0, 0);
+  }
+  
+  .Btn:hover .arrow {
+    animation: slide-in-bottom .7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
