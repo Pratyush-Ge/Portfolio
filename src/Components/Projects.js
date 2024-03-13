@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import '../Styles/project.css';
 import ParkNxt from '../Assets/images/ParkNxt.png';
 import G4G from '../Assets/images/G4G.png';
-import Safar from '../Assets/images/safar.png'
-import Tenzies from '../Assets/images/tenzies.png'
+import challan from '../Assets/images/challan.png';
+import Tenzies from '../Assets/images/tenzies.png';
 
 const ProjectCard = ({ ProjectImage, title, description, techStack, githubLink }) => {
   const [expanded, setExpanded] = useState(false);
@@ -50,8 +50,8 @@ const Projects = () => {
           description={`(Collaborative)\n➡️ Innovative e-commerce and charity platform with integrated machine learning for secure product verification.\n\n
           ➡️ Optimized recycling program for added revenue from non-working items.\n 
           ➡️ Partnerships with charities for social impact.`}
-          techStack="Tech Stack : Bootstrap, React.js, Node.js, Express, MongoDB, Machine Learning Model(YOLO V5s)"
-          githubLink="https://github.com/Pratyush-Ge"
+          techStack="Tech Stack : Bootstrap, React.js, Node.js, Express, MongoDB, JWT, Machine Learning Model(YOLO V5s)"
+          githubLink="https://github.com/Pratyush-Ge/Give4Goods"
         />
         <ProjectCard
           title="ParkNxt"
@@ -60,15 +60,22 @@ const Projects = () => {
           ➡️ Collaborated on admin view for streamlined parking space management.\n
           ➡️ Enhanced payment gateway integration for seamless transactions.`}
           techStack="Tech Stack : Bootstrap, Tailwind, Firebase, React.js, Node.js, Express, MongoDB"
-          githubLink="https://github.com/Pratyush-Ge/"
+          githubLink="https://github.com/Pratyush-Ge/ParkNxt_Full"
         />
         <ProjectCard
-          title="Safar"
-          ProjectImage={Safar}
-          description={'➡️ Trending Exploration : Discover the latest and hottest travel destinations.\n➡️ Smart Search : Find places easily with a powerful search feature.\n➡️ Comprehensive Details : Get detailed info, images, and reviews for every destination.'}
-          techStack="Under Development!"
-          githubLink=""
+          title="E-Challan"
+          ProjectImage={challan}
+          description={'➡️ Online E-challan management system for traffic police personnels.'}
+          techStack="Tech Stack: Tailwind, React, Node.js, Express, SQL"
+          githubLink="https://github.com/Pratyush-Ge/E-Challan"
         />
+        {/* <ProjectCard
+          title="College-Space"
+          ProjectImage={challan}
+          description={'➡️ Online E-challan management system for traffic police personnels.'}
+          techStack="Tech Stack: Tailwind, React, PHP, SQL"
+          githubLink=""
+        /> */}
         <ProjectCard
           title="Tenzies"
           ProjectImage={Tenzies}

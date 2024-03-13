@@ -11,7 +11,7 @@ const ContactPage = () => {
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
 
-        <a href="https://www.instagram.com/pratyush_ght/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/pratyush_ghatole/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} size="2x" />
         </a>
 
