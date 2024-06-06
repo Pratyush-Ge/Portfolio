@@ -4,7 +4,8 @@ import '../Styles/project.css';
 import ParkNxt from '../Assets/images/ParkNxt.png';
 import G4G from '../Assets/images/G4G.png';
 import challan from '../Assets/images/challan.png';
-import Tenzies from '../Assets/images/tenzies.png';
+import UniVerse from '../Assets/images/universe.png';
+// import Tenzies from '../Assets/images/tenzies.png';
 
 const ProjectCard = ({ ProjectImage, title, description, techStack, githubLink }) => {
   const [expanded, setExpanded] = useState(false);
@@ -42,8 +43,19 @@ const ProjectCard = ({ ProjectImage, title, description, techStack, githubLink }
 const Projects = () => {
   return (
     <div className='projectCont'>
-      <h1>Projects</h1>
+      <h1 className='about-title mt-8'>Projects</h1>
       <div className='cardSection'>
+      <ProjectCard
+          title="College-Space"
+          ProjectImage={UniVerse}
+          description={`➡️ College Space is a student-oriented website that provides a centralized platform for students.\n
+          ➡️ Notes: Access notes curated from the best available resources on the internet.\n
+          ➡️ Events: Find details about upcoming events in the college and clubs.\n
+          ➡️ Feed: Engage with other students through posts and comments.\n 
+          ➡️ Messaging: Realtime chat feature integrated for private conversations with other students.`}
+          techStack="Tech Stack: React, TailwindCSS and plugins, Socket.io, Node, Express, MongoDB"
+          githubLink="https://github.com/Pratyush-Ge/UniVerse" 
+        />
         <ProjectCard
           ProjectImage={G4G}
           title="Give4Good"
@@ -66,23 +78,16 @@ const Projects = () => {
           title="E-Challan"
           ProjectImage={challan}
           description={'➡️ Online E-challan management system for traffic police personnels.'}
-          techStack="Tech Stack: Tailwind, React, Node.js, Express, SQL"
+          techStack="Tech Stack:  Bootstrap, React.js, Node.js, Express, MongoDB"
           githubLink="https://github.com/Pratyush-Ge/E-Challan"
         />
         {/* <ProjectCard
-          title="College-Space"
-          ProjectImage={challan}
-          description={'➡️ Online E-challan management system for traffic police personnels.'}
-          techStack="Tech Stack: Tailwind, React, PHP, SQL"
-          githubLink=""
-        /> */}
-        <ProjectCard
           title="Tenzies"
           ProjectImage={Tenzies}
           description={`➡️ A fun game of Tenzies. Click on similar numbers to hold and freeze. Roll until all numbers are same. Beat your score by making minimum moves !`}
           techStack="Play now : 👇"
           githubLink="https://github.com/Pratyush-Ge/Tenzies"
-        />
+        /> */}
       </div>
     </div>
   );

@@ -3,13 +3,12 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Projects from './Components/Projects';
+import About from './Components/About';
 import Skills from './Components/Skills';
-import { Element } from 'react-scroll';
 import Loading from './Components/Loading';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-import ig from './Assets/images/bg05.jpg'
-
+import JParticles from 'jparticles';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,30 +22,43 @@ function App() {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    if (!isLoading) {
+      new JParticles.Particle('#backimg', {
+        color: '#25bfff',
+        lineShape: 'cube',
+        range: 2000,
+        proximity: 80,
+        parallax: true,
+      });
+    }
+  }, [isLoading]);
+
   return (
     <div className="App">
       {isLoading ? (
         <Loading />
       ) : (
-        <Element name="About">
           <>
             <Navbar />
-            <Hero />
-            <Element name="Skills">
+            <section id="Home">
+              <Hero />
+            </section>
+            <section id="About">
+              <About />
+            </section>
+            <section id="Skills">
               <Skills />
-            </Element>
-            <Element name="Projects">
+            </section>
+            <section id="Projects">
               <Projects />
-            </Element>
-            <Element name="Contact">
+            </section>
+            <section id="Contact">
               <Contact />
-            </Element>
+            </section>
             <Footer />
-            <div className='backimg-container'>
-              <img className='backimg' alt="backImg" src={ig} />
-            </div>
+            <div id="backimg" className='backimg'></div>
           </>
-        </Element>
       )}
     </div>
   );
