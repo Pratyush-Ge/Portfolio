@@ -152,24 +152,6 @@ body {
 }
 
 
-/* menu  */
-.menu-icon {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 24px;
-  cursor: pointer;
-  z-index: 1;
-  transition: transform 0.3s;
-}
-
-
-
-
-
-
-
-
 /* Hero Section */
 .mainContainer {
   width: 100%;
@@ -373,7 +355,7 @@ body {
   position: fixed;
   left: 0;
   top: 30vh;
-  background: rgba(0, 0, 0, 0.23);
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
   display: flex;
   flex-direction: column;
@@ -400,8 +382,8 @@ body {
 .footer {
   bottom: 0;
   position: relative;
-  background: rgba(0, 0, 0, 0.151);
-  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   color: #14FFEC;
   padding: 20px;
   text-align: center;
@@ -421,35 +403,6 @@ body {
 
 /* Media Queries */
 @media only screen and (max-width: 1000px) {
-  .menu-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 24px;
-    cursor: pointer;
-    z-index: 1;
-    transition: transform 0.3s;
-  }
-
-  .menu-line {
-    width: 24px;
-    height: 2px;
-    background-color: white;
-    transition: transform 0.3s, opacity 0.3s;
-  }
-
-  .menu.open .menu-line:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
-  }
-
-  .menu.open .menu-line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu.open .menu-line:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
-  }
-
   .navbar ul {
     display: none;
   }
@@ -458,12 +411,12 @@ body {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 68px;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(4, 4, 4, 0.8);
     padding: 10px 0;
-    z-index: 999;
+    border-radius: 0 0 1rem 1rem;
   }
 
   .navbar ul.open li {

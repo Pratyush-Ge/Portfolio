@@ -23,8 +23,8 @@
   height: max-content;
   padding: 17px;
   color: white;
-  background-color: #0c0c0c8d;
-  backdrop-filter: blur(5px);
+  background-color: #0c0c0c3f;
+  backdrop-filter: blur(4px);
   background-position: 0 0, 10px 10px;
   box-shadow: 
     0 0 5px 2px rgba(20, 255, 236, 0.2),

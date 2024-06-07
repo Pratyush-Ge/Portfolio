@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { AiOutlineUser, AiOutlineProject, AiOutlineHome } from 'react-icons/ai';
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
 import { GrTechnology } from "react-icons/gr";
+import '../Styles/Navbar.css'
 
 const Navbar = () => {
   const navbarRef = useRef(null);
