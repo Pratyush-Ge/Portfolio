@@ -46,45 +46,45 @@ const Projects = () => {
       <h1 className='about-title mt-8'>Projects</h1>
       <div className='cardSection'>
       <ProjectCard
-          title="College-Space"
+          title="UniVerse"
           ProjectImage={UniVerse}
-          description={`➡️ College Space is a student-oriented website that provides a centralized platform for students.\n
-          ➡️ Notes: Access notes curated from the best available resources on the internet.\n
-          ➡️ Events: Find details about upcoming events in the college and clubs.\n
-          ➡️ Feed: Engage with other students through posts and comments.\n 
-          ➡️ Messaging: Realtime chat feature integrated for private conversations with other students.`}
+          description={`➤ UniVerse is a student-oriented website that provides a centralized platform for students.\n
+          ➤ Notes: Access notes curated from the best available resources on the internet.\n
+          ➤ Events: Find details about upcoming events in the college and clubs.\n
+          ➤ Feed: Engage with other students through posts and comments.\n 
+          ➤ Messaging: Realtime chat feature integrated for private conversations with other students.`}
           techStack="Tech Stack: React, TailwindCSS and plugins, Socket.io, Node, Express, MongoDB"
           githubLink="https://github.com/Pratyush-Ge/UniVerse" 
         />
         <ProjectCard
           ProjectImage={G4G}
           title="Give4Good"
-          description={`(Collaborative)\n➡️ Innovative e-commerce and charity platform with integrated machine learning for secure product verification.\n\n
-          ➡️ Optimized recycling program for added revenue from non-working items.\n 
-          ➡️ Partnerships with charities for social impact.`}
+          description={`➤ Innovative e-commerce and charity platform with integrated machine learning for secure product verification.\n\n
+          ➤ Optimized recycling program for added revenue from non-working items.\n 
+          ➤ Partnerships with charities for social impact.`}
           techStack="Tech Stack : Bootstrap, React.js, Node.js, Express, MongoDB, JWT, Machine Learning Model(YOLO V5s)"
           githubLink="https://github.com/Pratyush-Ge/Give4Goods"
         />
         <ProjectCard
           title="ParkNxt"
           ProjectImage={ParkNxt}
-          description={`(Collaborative)\n➡️ ParkNxt, optimizing urban mobility with smart parking solutions.\n
-          ➡️ Collaborated on admin view for streamlined parking space management.\n
-          ➡️ Enhanced payment gateway integration for seamless transactions.`}
+          description={`➤ ParkNxt, optimizing urban mobility with smart parking solutions.\n
+          ➤ Collaborated on admin view for streamlined parking space management.\n
+          ➤ Enhanced payment gateway integration for seamless transactions.`}
           techStack="Tech Stack : Bootstrap, Tailwind, Firebase, React.js, Node.js, Express, MongoDB"
           githubLink="https://github.com/Pratyush-Ge/ParkNxt_Full"
         />
         <ProjectCard
           title="E-Challan"
           ProjectImage={challan}
-          description={'➡️ Online E-challan management system for traffic police personnels.'}
+          description={'➤ Online E-challan management system for traffic police personnels.'}
           techStack="Tech Stack:  Bootstrap, React.js, Node.js, Express, MongoDB"
           githubLink="https://github.com/Pratyush-Ge/E-Challan"
         />
         {/* <ProjectCard
           title="Tenzies"
           ProjectImage={Tenzies}
-          description={`➡️ A fun game of Tenzies. Click on similar numbers to hold and freeze. Roll until all numbers are same. Beat your score by making minimum moves !`}
+          description={`➤ A fun game of Tenzies. Click on similar numbers to hold and freeze. Roll until all numbers are same. Beat your score by making minimum moves !`}
           techStack="Play now : 👇"
           githubLink="https://github.com/Pratyush-Ge/Tenzies"
         /> */}

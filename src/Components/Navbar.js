@@ -46,7 +46,7 @@ const Navbar = () => {
         duration={500}
         spy={true}
       >
-        <h1 className='logo'>Pratyush</h1>
+        <span className='logo'><span className='fl'>P</span>ratyus<span className='fl'>h</span></span>
       </Link>
 
       <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>

@@ -49,8 +49,8 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   font-family: 'font2';
 }
 
@@ -78,6 +78,10 @@ body {
 
 
 /* Navbar */
+.fl{
+  color: #14FFEC;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -545,6 +549,9 @@ body {
     padding: 8px 2px;
   }
 
+  .skill-icon {
+    width: 50%;
+  }
 
 
 
