@@ -246,13 +246,14 @@ body {
 }
 
 .rightWrapper {
-  margin: 40px;
+  border: none;
+  padding: 30px;
+  border-radius: 4%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
 }
 
-.right-div {
-  border: none;
-  border-radius: 4%;
-  background-color: rgba(0, 0, 0, 0.346);
+.right-div{
   width: 55%;
 }
 
@@ -337,7 +338,8 @@ body {
 .skill-right {
   border: none;
   border-radius: 4%;
-  background-color: rgba(0, 0, 0, 0.346);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
   width: 45%;
   display: flex;
   justify-content: center;
@@ -505,7 +507,7 @@ body {
   }
 
   .rightWrapper {
-    margin: 10px;
+    padding: 10px;
   }
 
   .right-div {
