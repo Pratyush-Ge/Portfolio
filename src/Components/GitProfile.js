@@ -24,7 +24,7 @@ const UserComponent = ({ username }) => {
 
         const fetchContributions = async () => {
             const endpoint = 'https://api.github.com/graphql';
-            const token = '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';
+            const token = process.env.GITHUB_TOKEN;
             const client = new GraphQLClient(endpoint, {
                 headers: {
                     authorization: `Bearer ${token}`,
