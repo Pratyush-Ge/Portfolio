@@ -310,19 +310,22 @@ body {
 
 .skills-container {
   margin: auto;
-  width: 75%;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
 }
 
 
 .skill-left,
 .skill-right {
   border: none;
+  margin: auto;
   border-radius: 4%;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(3px);
-  width: 45%;
+  width: 75%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -347,6 +350,25 @@ body {
   width: 74%;
 }
 
+
+
+/* heatmap  */
+.react-calendar-heatmap .color-active {
+  fill: rgb(69, 211, 69);
+}
+
+.react-calendar-heatmap .color-inactive {
+  fill: rgb(141, 141, 141);
+}
+
+.heatmap{
+  padding: 2rem;
+}
+
+.map-title {
+  font-size: 1.5rem;
+  font-family: font1;
+}
 
 
 /* Contact Section */
@@ -508,7 +530,9 @@ body {
     width: 50%;
   }
 
-
+  .heatmap{
+    padding: 5px;
+  }
 
   .linkss {
     width: 70vw;
