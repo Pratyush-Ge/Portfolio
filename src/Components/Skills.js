@@ -1,6 +1,6 @@
 import React from 'react';
 import StackIcon from "tech-stack-icons";
-import Profile from './GitProfile';
+// import Profile from './GitProfile';
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 
@@ -43,7 +43,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className='skill-right'>
+        <div className='skill-right gap-5'>
           <div className='flex gap-3 items-center justify-center'>
             <a
               className='map-title mt-3'
@@ -55,7 +55,7 @@ const Skills = () => {
             </a> <FaExternalLinkAlt />
           </div>
 
-          <Profile username='Pratyush-Ge' />
+          {/* <Profile username='Pratyush-Ge' /> */}
 
           <div className='flex gap-3 items-center justify-center flex-col mb-3'>
             <div className='flex gap-3 items-center justify-center'>
@@ -68,7 +68,7 @@ const Skills = () => {
               Leetcode
             </a> <FaExternalLinkAlt />
             </div>
-            <p className='text-center'>500+ Questions on problem solving and DSA. </p>
+            {/* <p className='text-center'>500+ Questions on problem solving and DSA. </p> */}
           </div>
         </div>
       </div>
